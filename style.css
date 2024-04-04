@@ -5,12 +5,20 @@
     border: 1px black solid;
     border-radius: 100%;
     margin: 10px;
+    flex: 0 0 100px;
     
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
 }
 #lampak{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 400px;
 }
 
 .sarga{
