@@ -7,7 +7,10 @@ function szinAllitas(ELEM){
 }
 
 function lamparaKattint(lista){
-    
+    const LAMPAK = document.querySelectorAll(".lampa")
+    for (let index = 0; index < lista.length; index++) {
+        LAMPAK.on("click", szinAllitas)
+    }
 }
 
 function randomizalo(){
