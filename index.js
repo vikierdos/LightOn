@@ -1,4 +1,6 @@
 var lista = randomizalo();
+$(document).ready(jatekKezdes);
+
 
 function szinAllitas(ELEM){
     ELEM.toggleClass("sarga")
@@ -6,6 +8,10 @@ function szinAllitas(ELEM){
 
 function lamparaKattint(lista){
 
+    const LAMPAK = document.querySelectorAll(".lampa")
+    for (let index = 0; index < lista.length; index++) {
+        LAMPAK.on("click", szinAllitas)
+    }
 }
 
 function randomizalo(){
@@ -25,4 +31,14 @@ function lampakSzama(lista){
     }
     const LEKAPCSOLTAKSZAMA = $("#lampaSzam")
     LEKAPCSOLTAKSZAMA.append(db)
+}
+
+
+function jatekKezdes(lista){
+    const lampak = document.querySelectorAll(".lampa");
+    for (let index = 0; index < lista.length; index++) {
+        if (lista[index]) {
+            szinAllitas(lampak[index]);
+        }
+    }
 }
