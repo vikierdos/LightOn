@@ -1,5 +1,7 @@
 function szinAllitas(ELEM){
-ELEM.toggleClass("sarga")
+    ELEM.toggleClass("sarga")
+}
+
 function lamparaKattint(lista){
     
 }
