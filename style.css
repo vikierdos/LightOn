@@ -1,0 +1,11 @@
+.lampa{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 1px black solid;
+    border-radius: 100%;
+    margin: 10px;
+}
+#lampak{
+    
+}
