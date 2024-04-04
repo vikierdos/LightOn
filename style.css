@@ -5,7 +5,14 @@
     border: 1px black solid;
     border-radius: 100%;
     margin: 10px;
+    
 }
 #lampak{
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sarga{
+    background-color: yellow;
 }
