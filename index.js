@@ -5,7 +5,7 @@ function szinAllitas(ELEM){
 }
 
 function lamparaKattint(lista){
-    
+
 }
 
 function randomizalo(){
@@ -14,4 +14,15 @@ function randomizalo(){
         lampakAllapota[index] = (Math.random()*101-1) <= 20;
     }
     return lampakAllapota;
+}
+
+function lampakSzama(lista){
+    let db = 0
+    for (let index = 0; index < lista.length; index++) {
+        if(lista[index] == false){
+            db++
+        }
+    }
+    const LEKAPCSOLTAKSZAMA = $("#lampaSzam")
+    LEKAPCSOLTAKSZAMA.append(db)
 }
